@@ -6,7 +6,7 @@ on:
     - cron: '15 15 * * *'
 
 jobs:
-  docker:
+  surge:
     runs-on: ubuntu-latest
     steps:
       - name: Surge upload
