@@ -18,8 +18,6 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
-        with:
-          node-version: ''
 
       - name: Surge upload
         run: bash ./env/surge.sh
