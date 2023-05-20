@@ -1,0 +1,13 @@
+name: NPX Surge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 15 * * *'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Surge upload
+        run: bash ./env/surge.sh
