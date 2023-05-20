@@ -15,9 +15,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Print environment
-        run: echo "${SURGE_LOGIN}" "${SURGE_TOKEN}"
-
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -32,4 +29,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-
