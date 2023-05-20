@@ -1,1 +1,5 @@
-# chalkboard
+# Chalkboard
+
+## License
+
+[MIT](./LICENSE)
